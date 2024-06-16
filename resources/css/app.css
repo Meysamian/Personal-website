@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .menu-item {
+        @apply p-2 my-2 ml-6 text-xl font-bold text-center list-none rounded-l-full duration-300 ease-in-out
+        cursor-pointer border-b-2 border-sky-900 hover:border-sky-700;
+    }
+
+    .li-menu-item {
+        @apply text-gray-300 hover:text-sky-400 hover:bg-[url('/picture/arrow-right-hover.png')] bg-right bg-no-repeat bg-contain duration-300 ease-in-out ;
+    }
+
+    .li-active-menu-item {
+        @apply text-sky-400 bg-[url('/picture/arrow-right-select.png')] bg-right bg-no-repeat bg-contain  hover:border-sky-700;
+    }
+
+
+    .key {
+        @apply p-4 px-8 bg-sky-600 text-gray-100 rounded-lg hover:bg-sky-500 duration-100;
+    }
+
+    html {
+        @apply  scroll-smooth;
+    }
+
+    .white-box {
+        @apply  p-2 md:p-6 pb-16 ;
+    }
+
+    .white-title {
+        @apply text-5xl mb-2 md:mb-6 p-6 text-gray-600 border-b-2 rounded-full;
+    }
+
+    .sky-box {
+        @apply p-2 md:p-6 pb-16 bg-sky-700;
+    }
+
+    .sky-title {
+        @apply text-5xl my-2 md:mb-6 p-6 text-gray-600 border-b-2 rounded-full text-white;
+    }
+
+    .separator-paragraph-1 {
+        @apply border-b-2 mb-6 rounded-full h-4
+    }
+
+    .certifications tr {
+        @apply pb-10
+    }
+
+    #experiences tr.tr-white {
+        @apply bg-[url('/picture/arrow-for-timeline.png')] bg-no-repeat bg-[left_top_0.35rem] bg-[length:60px_15px]
+    }
+
+    .tr-sky {
+        @apply align-top bg-[url('/picture/arrow-for-timeline-sky.png')] bg-no-repeat bg-[left_top_0.7rem] bg-[length:60px_15px] leading-10
+    }
+
+    .error {
+        @apply  w-full md:w-3/4 text-left bg-red-900 text-gray-200 p-2 px-4 border-2 border-red-700 rounded-xl duration-100
+    }
+
+    .success {
+        @apply  w-full md:w-3/4 text-left bg-green-800 text-gray-200 p-4 border-2 border-green-700 rounded-xl duration-100
+    }
+
+    .form-row {
+        @apply flex flex-wrap my-2 w-full duration-100
+    }
+
+    .text-input {
+        @apply w-full text-gray-900 rounded-xl
+    }
+
+    .form-label {
+        @apply w-full md:w-1/4 text-left md:text-right pr-6 pt-2 align-middle
+    }
+
+    .title-services {
+        @apply border-2 p-4 rounded-lg bg-orange-600  text-xl md:text-2xl w-full md:w-2/3 mx-auto
+    }
+
+    .put-a-space-in-mobile {
+        @apply h-2 md:h-0
+    }
+
+}
